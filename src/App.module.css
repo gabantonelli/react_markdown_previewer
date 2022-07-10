@@ -6,3 +6,16 @@
 .app__textarea {
     width: 100%;
 }
+
+img {
+    max-width: 100%;
+}
+
+table {
+    margin-bottom: 1rem;
+}
+
+td, th {
+    border-width: 1px;
+    padding: .5rem 1rem;
+}
