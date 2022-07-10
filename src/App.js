@@ -58,9 +58,9 @@ And here. | Okay. | I think we get it.
 
   return (
     <div className={styles.app__container}>
-      <textarea className={styles.app__textarea} name="" id="" cols="30" rows="10" defaultValue={currentMarkup} onChange={changeTextHandler}>
+      <textarea className={styles.app__textarea} name="editor" id="editor" cols="30" rows="10" defaultValue={currentMarkup} onChange={changeTextHandler}>
       </textarea>
-      <div dangerouslySetInnerHTML={{__html: marked.parse(currentMarkup)}}>
+      <div id="preview" className={styles.app__preview} dangerouslySetInnerHTML={{__html: marked.parse(currentMarkup)}}>
       </div>
     </div>
   )
