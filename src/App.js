@@ -2,6 +2,10 @@ import React, {useState} from 'react';
 import { marked } from 'marked';
 import styles from './App.module.css';
 
+marked.setOptions({
+  breaks: true
+})
+
 const App = () => {
   const initialMarkup = `
   # Welcome to my React Markdown Previewer!
